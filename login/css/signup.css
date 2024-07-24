@@ -57,8 +57,13 @@ button {
 
   padding: 0;
   margin: 50px 0;
+  color: white;
   background-color: rgba(201, 153, 249, 1);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .question {
@@ -71,4 +76,25 @@ a {
   font-size: 16px;
   font-weight: 400;
   color: black;
+}
+
+.select {
+  display: flex;
+  flex-direction: row;
+}
+
+.select input {
+  display: none;
+}
+
+.sel + label {
+  border: 1px solid black;
+  border-radius: 7px;
+  width: 140px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
 }
