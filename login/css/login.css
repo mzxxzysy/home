@@ -1,0 +1,16 @@
+body {
+  width: 295px;
+  height: 812px;
+  padding: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 161px;
+  height: 112px;
+}
+
