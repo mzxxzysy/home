@@ -38,16 +38,16 @@ nav {
   display: flex;
 }
 
-#photo {
-  display: none;
-}
-
-#photo + label {
+.re_photo {
   width: 80px;
   height: 80px;
   border: 1px solid rgba(201, 153, 249, 1);
   border-radius: 100%;
+  background-image: url(../img/inputphoto.png);
   margin-right: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .userInfo {
@@ -70,22 +70,13 @@ section {
   flex-direction: column;
 }
 
-a,
-#logout + label {
+a {
   text-decoration: none;
   padding: 20px 10px;
   border-bottom: 3px solid rgba(201, 153, 249, 0.5);
   font-size: 16px;
   font-weight: 700;
   color: black;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-button {
-  display: none;
 }
 
 .ad {

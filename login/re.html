@@ -11,16 +11,21 @@
 <body>
     <header>
         <img src="./img/back.png">
-        <img src="./img/check.png">
     </header>
-    <nav>
-        <input type="file" id="photo">
-        <label for="photo"></label>
-    </nav>
+
+
     <section>
-        <div>이름</div>
-        <input type="text" placeholder="이멋사">
+        <div class="photoLine">
+            <input type="file" id="photo" onchange="loadFile(this)">
+            <label for="photo" class="photo"></label>
+        </div>
+        <div class="nameLine">
+            <div>이름</div>
+            <input type="text" placeholder="이멋사">
+        </div>
     </section>
+
+    <script src="./js/re.js"></script>
 </body>
 
 </html>

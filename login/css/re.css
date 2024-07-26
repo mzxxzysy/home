@@ -29,7 +29,7 @@ header img {
   height: 20px;
 }
 
-nav {
+.photoLine {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
@@ -46,24 +46,28 @@ nav {
   border: 1px solid rgba(201, 153, 249, 1);
   border-radius: 100%;
   margin-right: 20px;
+  background-image: url(../img/inputphoto.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &:hover {
     cursor: pointer;
   }
 }
 
-section {
+.nameLine {
   margin-top: 30px;
   padding-left: 20px;
 }
 
-section div {
+.nameLine div {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-section input {
+.nameLine input {
   width: 260px;
   height: 40px;
   border: 1px solid black;

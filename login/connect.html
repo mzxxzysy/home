@@ -15,10 +15,16 @@
         <div class="secTitle">내게 온 신청</div>
         <ul class="apply">
             <li>
-                <div class="name">김 씨</div>
+                <div class="list_o">
+                    <img src="./img/o.png">
+                    <div class="name">김 씨</div>
+                </div>
+
                 <div class="btns">
-                    <button type="submit" class="o">수락</button>
-                    <button type="submit" class="x">거절</button>
+                    <button type="submit" id="o"></button>
+                    <label for="o" class="o">수락</label>
+                    <button type="submit" id="x"></button>
+                    <label for="x" class="x">거절</label>
                 </div>
             </li>
         </ul>
@@ -26,20 +32,23 @@
 
     <section class="sec2">
         <div class="secTitle">연동 계정 추가</div>
-        <div>연동할 계정의 아이디를 작성해주세요.</div>
-        <div class="searchBox">
-            <input type="text" placeholder="아이디 작성">
-            <button type="submit">
-                <img src="./img/search.png">
-            </button>
-        </div>
-        <div class="search_result">
-            <div>
-                <img src="./img/o.png">
-                <div>abc_1230</div>
+        <div class="sec2_set">
+            <div class="info">연동할 계정의 아이디를 작성해주세요.</div>
+            <div id="search-form">
+                <input type="text" placeholder="아이디 작성">
+                <button type="submit" id="search_icon"></button>
+                <label for="search_icon"></label>
             </div>
-            <button type="submit" class="apply">연동 신청</button>
+            <div class="search_result">
+                <div class="list_o">
+                    <img src="./img/o.png">
+                    <div>abc_1230</div>
+                </div>
+                <button type="submit" id="apply"></button>
+                <label for="apply">연동 신청</label>
+            </div>
         </div>
+
 
     </section>
 
@@ -47,8 +56,13 @@
         <div class="secTitle">연동 계정 삭제</div>
         <ul class="conns">
             <li>
-                <div class="name">최 씨</div>
-                <button type="submit" class="delete">삭제</button>
+                <div class="list_o">
+                    <img src="./img/o.png">
+                    <div class="name">최 씨</div>
+                </div>
+
+                <button type="submit" id="delete"></button>
+                <label for="delete">삭제</label>
             </li>
         </ul>
     </section>
