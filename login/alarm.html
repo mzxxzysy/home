@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/alarm.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="./img/back.png"></a>
+    </header>
+
+    <nav>
+        <div>체크리스트 알람</div>
+        <div class="alarmBtns">
+            <button id="on"></button>
+            <label for="on">켜기</label>
+            <button id="off"></button>
+            <label for="off">끄기</label>
+        </div>
+    </nav>
+
+    <form action="">
+        <div class="alarmSet">
+            <input type="radio" id="check_after" name="alarm">
+            <label for="check_after" class="alarmP">체크하는 즉시</label>
+        </div>
+        <div class="alarmSet">
+            <div class="alarmP">체크 안 했을 때</div>
+            <div class="MInfo">
+                <input type="radio" id="no5" name="alarm">
+                <label for="no5" class="time">5분 뒤</label>
+            </div>
+            <div class="MInfo">
+                <input type="radio" id="no10" name="alarm">
+                <label for="no10" class="time">10분 뒤</label>
+            </div>
+            <div class="MInfo">
+                <input type="radio" id="no15" name="alarm">
+                <label for="no15" class="time">15분 뒤</label>
+            </div>
+            <div class="MInfo">
+                <input type="radio" id="no30" name="alarm">
+                <label for="no30" class="time">30분 뒤</label>
+            </div>
+        </div>
+    </form>
+
+    <script src="./js/alarm.js"></script>
+</body>
+
+</html>

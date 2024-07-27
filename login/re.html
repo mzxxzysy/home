@@ -15,14 +15,22 @@
 
 
     <section>
-        <div class="photoLine">
-            <input type="file" id="photo" onchange="loadFile(this)">
-            <label for="photo" class="photo"></label>
-        </div>
-        <div class="nameLine">
-            <div>이름</div>
-            <input type="text" placeholder="이멋사">
-        </div>
+        <form method="POST" action="{% url 'accounts:myinfo_update' %}" enctype="multipart/form-data">
+            <div class="photoLine">
+                <input type="file" id="photo" onchange="loadFile(this)" />
+                <label for="photo" class="photo"></label>
+            </div>
+
+            <div class="nameLine">
+                <div>이름</div>
+                <input type="text" name="nickname" value="이멋사">
+            </div>
+            <div class="doneLine">
+                <button type="submit" id="done"></button>
+                <label for="done">완료</label>
+            </div>
+
+        </form>
     </section>
 
     <script src="./js/re.js"></script>
